@@ -1,8 +1,7 @@
 language: node_js
 node_js:
  - "stable"
-script: 
- - gulp
+script:
  - npm install
 services:
  - mongodb
