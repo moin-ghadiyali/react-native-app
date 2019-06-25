@@ -1,8 +1,11 @@
 language: node_js
 node_js:
- - "4"
-before_script:
- - npm install -g gulp-cli
+ - "stable"
 script: 
  - gulp
- - npm test
+ - npm install
+services:
+ - mongodb
+cache:
+  directories:
+    - "node_modules"
